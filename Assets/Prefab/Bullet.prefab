@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 145786636131112868}
   - component: {fileID: 145786636131112871}
   - component: {fileID: 145786636131112870}
-  - component: {fileID: 145786636131112890}
   - component: {fileID: 145786636131112869}
+  - component: {fileID: 8197540584216170740}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -29,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 145786636131112864}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.2, y: 0, z: 3.2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.774, y: 0, z: 2.173}
+  m_LocalScale: {x: 1.2504886, y: 1.2504879, z: 1.2504879}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -93,9 +93,29 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.8, y: 0.8, z: 0.8}
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &145786636131112890
+--- !u!114 &145786636131112869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145786636131112864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e22bd99590c6ce49be762a4f53f5bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _count: 2
+  bullet: 1
+  _jumpForce: 3
+  cube: {fileID: 5304737092187255300, guid: 3695736a5f1f3c2478b50b81e37dc366, type: 3}
+  _id: 0
+  _inGame: 0
+  _textInfo: {fileID: 4466695332923502024, guid: 3adcaec1eb988a34794027e1fbcab4a6,
+    type: 3}
+--- !u!54 &8197540584216170740
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111,19 +131,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &145786636131112869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 145786636131112864}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e22bd99590c6ce49be762a4f53f5bc9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _count: 2
-  bullet: 1
-  _jumpForce: 0
-  cube: {fileID: 1850019966281228518, guid: 3695736a5f1f3c2478b50b81e37dc366, type: 3}
